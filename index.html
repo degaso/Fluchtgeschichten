@@ -12,20 +12,22 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body class="d-flex flex-column h-100" style="overflow-x: hidden; position: relative;">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 9999; position: fixed; width: 100%;">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html">BE-HELP</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">WER WIR SIND</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">BLOG</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">SPRACHUNTERSTÜTZUNG</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#ourTeam">WER WIR SIND</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sprachunterstützung.html">SPRACHUNTERSTÜTZUNG</a></li>
                         </ul>
                     </div>
                 </div>
@@ -39,7 +41,7 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div class="container px-5" style="z-index: 999; position: relative;">
+                <div data-aos="fade-up" class="container px-5" style="z-index: 999; position: relative;">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
@@ -60,28 +62,28 @@
             <section class="py-5" id="features" style="margin-top: 100px; margin-bottom: 100px;">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Was du tun kannst.</h2></div>
+                        <div data-aos="fade-up" class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Was du tun kannst.</h2></div>
                         <div class="col-lg-8">
-                            <div class="row gx-5 row-cols-1 row-cols-md-2">
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                                    <h2 class="h5">Saschspenden</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                            <div  class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div data-aos="fade-up" class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-box"></i></div>
+                                    <h2 class="h5">Sachspenden</h2>
+                                    <p class="mb-0">Wir fahren regelmäßig nach Polen. Dort verteilen wir Sachspenden und geben sie weiter zu unserem Transporter direkt in die Ukraine. Spenden könnt ihr Mo-Sa 11:30-21:00 & So 12:00-20:00 im Krawummel, Ludgeristrasse 62 in 48143 Münster, abgeben.</p>
                                 </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                                <div data-aos="fade-up" class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cash"></i></div>
                                     <h2 class="h5">Geldspenden</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <p class="mb-0">Um unsere Fahrten organisieren zu können, und um konkrete Hilfe anbieten zu können, sind wir auf Geldspenden angewiesen. Wenn ihr spenden wollt und könnt, dann am bestern per Paypal an ukrainehilfe@krawummel.de</p>
                                 </div>
-                                <div class="col mb-5 mb-md-0 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                                <div data-aos="fade-up" class="col mb-5 mb-md-0 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-person"></i></div>
                                     <h2 class="h5">Fahrer-Fahrzeuge</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <p class="mb-0">Manchmal brauchen wir für eine Tour Fahrzeuge und Fahre. Infos dazu findet ihr auf unseren Socialmedia Plattformen.</p>
                                 </div>
-                                <div class="col h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                                <div data-aos="fade-up" class="col h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-house"></i></div>
                                     <h2 class="h5">Obdach</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <p class="mb-0">Ihr habt Platz? Ihr könnt jemanden bei euch aufnehmen? Dann zögert nicht euch bei eurem Landkreis zu melden. Auch in dieser schlimmen Zeit, sind die Erfahrungen fremden Obdach zu geben unbezahlbar.</p>
                                 </div>
                             </div>
                         </div>
@@ -93,14 +95,13 @@
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-xl-7">
-                            <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</div>
+                            <div data-aos="fade-up" class="text-center">
+                                <div class="fs-4 mb-4 fst-italic">"ICH GLAUBE AN DEN GEIST DER GESCHWISTERLICHKEIT WIR SIND ALLE VON GEBURT AN FREI UND GLEICH KEIN REICH KEIN STAAT KEINE GRENZE DIE DICH HÄLT UND DEIN ZUHAUSE DEIN ZUHAUSE IST DIE WELT"</div>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
                                     <div class="fw-bold">
-                                        Tom Ato
+                                        8kids
                                         <span class="fw-bold text-primary mx-1">/</span>
-                                        CEO, Pomodoro
+                                        Zuhause
                                     </div>
                                 </div>
                             </div>
@@ -108,19 +109,20 @@
                     </div>
                 </div>
             </div>
+
             <!-- Blog preview section-->
             <section class="py-5">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
-                            <div class="text-center">
+                            <div data-aos="fade-up" class="text-center">
                                 <h2 class="fw-bolder">From our blog</h2>
                                 <p class="lead fw-normal text-muted mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.</p>
                             </div>
                         </div>
                     </div>
                     <div class="row gx-5">
-                        <div class="col-lg-4 mb-5">
+                        <div data-aos="fade-up" class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
                                 <div class="card-body p-4">
@@ -141,7 +143,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 mb-5">
+                        <div data-aos="fade-up" class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
                                 <div class="card-body p-4">
@@ -162,7 +164,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 mb-5">
+                        <div data-aos="fade-up" class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />
                                 <div class="card-body p-4">
@@ -184,24 +186,52 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Call to action-->
-                    <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-                        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-                            <div class="mb-4 mb-xl-0">
-                                <div class="fs-3 fw-bold text-white">New products, delivered to you.</div>
-                                <div class="text-white-50">Sign up for our newsletter for the latest updates.</div>
-                            </div>
-                            <div class="ms-xl-4">
-                                <div class="input-group mb-2">
-                                    <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
-                                    <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
-                                </div>
-                                <div class="small text-white-50">We care about privacy, and will never share your data.</div>
-                            </div>
-                        </div>
-                    </aside>
                 </div>
             </section>
+
+
+            <!-- Team members section-->
+            <section class="py-5 bg-light" id="ourTeam">
+                <div class="container px-5 my-5">
+                    <div data-aos="fade-up" class="text-center">
+                        <h2 class="fw-bolder">Our team</h2>
+                        <p class="lead fw-normal text-muted mb-5">Dedicated to quality and your success</p>
+                    </div>
+                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                        <div data-aos="fade-up" class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Ibbie Eckart</h5>
+                                <div class="fst-italic text-muted">Founder &amp; CEO</div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Arden Vasek</h5>
+                                <div class="fst-italic text-muted">CFO</div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" class="col mb-5 mb-5 mb-sm-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Toribio Nerthus</h5>
+                                <div class="fst-italic text-muted">Operations Manager</div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" class="col mb-5">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Malvina Cilla</h5>
+                                <div class="fst-italic text-muted">CTO</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
         </main>
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
@@ -222,5 +252,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
