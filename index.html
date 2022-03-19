@@ -13,12 +13,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column h-100" style="overflow-x: hidden; position: relative;">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">be-help</a>
+                    <a class="navbar-brand" href="index.html">BE-HELP</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -32,7 +32,14 @@
             </nav>
             <!-- Header-->
             <header class="bg-dark py-5">
-                <div class="container px-5">
+                <div style="position: absolute; top: 56px; overflow: hidden; max-height: 700px;">
+                    <video autoplay="" muted="" loop="" style="width: 100vw;" alt="background video for the main page.">
+                        <source src="./assets/pexels koolshooters 8104046.mp4" type="video/mp4">
+                        <source src="./assets/pexels koolshooters 8104046.mp4" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="container px-5" style="z-index: 999; position: relative;">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
@@ -50,7 +57,7 @@
                 </div>
             </header>
             <!-- Features section-->
-            <section class="py-5" id="features">
+            <section class="py-5" id="features" style="margin-top: 100px; margin-bottom: 100px;">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Was du tun kannst.</h2></div>
